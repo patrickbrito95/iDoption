@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Clima from './components/clima/Clima';
 import axios from 'axios';
 import Slider from './components/carousel/Slider';
+import ListAnimals from './components/produtos/Listar-Animais';
 
 
 
@@ -22,12 +23,8 @@ function MiniEcommerce() {
    <div>
      <Menu />
      <Clima />
-     <Slider>
-
-     </Slider>
-     <Produtos />
-     <ListarProdutos />
-     <Checkout />
+     <Slider />
+     <ListAnimals />
 
    </div>
   );

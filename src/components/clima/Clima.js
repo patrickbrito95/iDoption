@@ -17,7 +17,7 @@ function Clima() {
             }
         });
         setWeather(res.data);
-        console.log(res.data);
+        console.log(lat, long);
     }
 
     useEffect(() => {
