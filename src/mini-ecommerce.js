@@ -28,6 +28,7 @@ function MiniEcommerce() {
      <Produtos />
      <ListarProdutos />
      <Checkout />
+  
 
    </div>
   );
