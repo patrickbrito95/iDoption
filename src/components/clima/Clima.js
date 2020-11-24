@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
+import './Clima.css';
 
 function Clima() {
 
@@ -43,15 +44,13 @@ function Clima() {
         )
     } else {
         return (
-            <Fragment >
+            <Fragment>
                <div className="d-flex justify-content-center"><h6>Clima atual: {weather['weather'][0]['description']}</h6></div>
                 <hr />
                 <div className="d-flex justify-content-center">
-                <span ><strong>Temperatura atual: </strong>{weather['main']['temp']}º</span>
-                    <span>| <strong>Temperatura máxima: </strong>{weather['main']['temp_max']}º</span>
-                    <span>| <strong>Temperatura mínima: </strong>{weather['main']['temp_min']}º</span>
-                    <span>| <strong>Pressão: </strong>{weather['main']['pressure']} hpa</span>
-                    <span>| <strong>Uminade: </strong>{weather['main']['humidity']}%</span>
+                <span className="clima"><strong>Temperatura atual: </strong>{weather['main']['temp']}º</span>
+                    <span className="clima">|   <strong>Temperatura máxima: </strong>{weather['main']['temp_max']}º</span>
+                    <span className="clima">|   <strong>Temperatura mínima: </strong>{weather['main']['temp_min']}º</span>
                 </div>
                     
                 

@@ -12,3 +12,14 @@
     font-size: 0.75rem;
 }
 
+.card-box {
+    background-color: #faead3;
+    box-shadow: 4px 9px 16px -4px rgba(0,0,0,0.75);
+}
+
+.title-text {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 5px;
+}
+
