@@ -1,0 +1,134 @@
+
+    [
+    {
+        "id": 1,
+        "name": "Jorginho",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/coonhound/n02089078_3923.jpg",
+        "gender": "Macho",
+        "descricao": "Olá, meu nome é Jorginho. Gosto muito de brincar, amo petiscos e não gosto muito de tomar banho..."
+    },
+    {
+        "id": 2,
+        "name": "Belinha",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/spaniel-sussex/n02102480_3762.jpg",
+        "gender": "Fêmea",
+        "descricao": "Oii, meu nome é Belinha. Sou uma cadelinha muito divertida que gosta de correr e amo crianças."
+    },
+    {
+        "id": 3,
+        "name": "Jojô",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/komondor/n02105505_1024.jpg",
+        "gender": "Fêmea",
+        "descricao": "Sou a Jojô, uma cadelinha muito esperta que ta doida para ter uma família e dar muito amor para meus futuros donos."
+    },
+    {
+        "id": 4,
+        "name": "Marreco",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/dachshund/Daschund_Wirehair.jpg",
+        "gender": "Macho",
+        "descricao": "Apesar de me chamar de Marreco, eu não tenho nada a ver com patos. Hahahaha! Apesar de pequeno, sou um ótimo guardião."
+    },
+    {
+        "id": 5,
+        "name": "Thor",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/dane-great/n02109047_34162.jpg",
+        "gender": "Macho",
+        "descricao": "Oi aumiguinhos, sou o Thor. Apesar de grandão, eu sou muito dócil e amo crianças!!"
+        
+    },
+    {
+        "id": 6,
+        "name": "Jully",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/pointer-germanlonghair/hans1.jpg",
+        "gender": "Fêmea",
+        "descricao": "Oi, pessoal! Eu sou a Jully, uma cadelinha muito esperta que ama comer, brincar e fazer bagunça!"
+        
+    },
+    {
+        "id": 7,
+        "name": "Mel",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/hound-english/n02089973_2791.jpg",
+        "gender": "Fêmea",
+        "descricao": "Oi galera!! Sou a Mel. Estou doida para encontrar um novo lar. Por onde passo sempre faço amigos."
+        
+    },
+    {
+        "id": 8,
+        "name": "Dama",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/pekinese/n02086079_5590.jpg",
+        "gender": "Fêmea",
+        "descricao": "Sou a Dama. Uma cadelinha muito preguiçosa, mas muito amorosa. Adoro petiscos e morder brinqudinhos."
+        
+    },
+    {
+        "id": 9,
+        "name": "Duque",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/hound-walker/n02089867_3953.jpg",
+        "gender": "Macho",
+        "descricao": "Sou o Duque, pessoal. Sou um cão muito inteligente e bagunceiro. Amo crianças e fazer bagunça com elas"
+        
+    },
+    {
+        "id": 10,
+        "name": "Totó",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/affenpinscher/n02110627_5743.jpg",
+        "gender": "Macho",
+        "descricao": "Sim, meu nome é super comum mesmo. Mas só o nome.. Hahahaha! Estou doido para conhecer um novo amiguinho."
+        
+    },
+    {
+        "id": 11,
+        "name": "Maria Joaquina",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/maltese/n02085936_22439.jpg",
+        "gender": "Fêmea",
+        "descricao": "Olá, sou a Maria Joaquina. Atendo como 'Joca' e 'Majô. Amo comer e brincar!!"
+        
+    },
+    {
+        "id": 12,
+        "name": "Frederico",
+        "type": "Cat",
+        "image": "https://24.media.tumblr.com/Jjkybd3nS9i7fdgujDbNAUZ4_500.jpg",
+        "gender": "Macho",
+        "descricao": "Pessoal, sou o Frederico. Mas podem me chamar de 'Fred'. Sou um gatinho muito preguiçoso e adora correr atrás de lã, bolinhas e outros brinquedinhos."
+        
+    },
+    {
+        "id": 13,
+        "name": "Alfredo",
+        "type": "Cat",
+        "image": "https://25.media.tumblr.com/tumblr_m2xmcvjddo1qejbiro1_1280.jpg",
+        "gender": "Macho",
+        "descricao": "Sou o gatinho Alfredo. Ainda sou um filhote, não aprendi muita coisa, mas sou muito esperto e brincalhão!!"
+        
+    },
+    {
+        "id": 14,
+        "name": "Frida",
+        "type": "Cat",
+        "image": "https://24.media.tumblr.com/tumblr_m0jbyzmDzi1qzv52ko1_1280.jpg",
+        "gender": "Fêmea",
+        "descricao": "Oi pessoal! Sou a Frida, uma gatinha muito dengosa que ama mimos e petiscos. Sou muito quietinha e brincalhona também..."
+        
+    },
+    {
+        "id": 15,
+        "name": "Theo",
+        "type": "Dog",
+        "image": "https://images.dog.ceo/breeds/mix/Galaxy.jpg",
+        "gender": "Macho",
+        "descricao": "Auguinhos, sou o Theo. Um cachorro muito esperto e estou doido para fazer amigos novos. Venha me conhecer!!"
+        
+    }
+]
