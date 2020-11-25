@@ -55,6 +55,4 @@ const ListAnimals = () => {
     )
 }
 
-
-
-export default ListAnimals; 
+export default ListAnimals;

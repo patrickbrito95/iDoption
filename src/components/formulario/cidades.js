@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import axios from "axios";
 
 function Cidades(props) {
+<<<<<<< HEAD
   
   useEffect(() => {
     cidades.map( async (eachcities, idx) => {
@@ -16,20 +17,21 @@ function Cidades(props) {
 
   const CIDADES_URL =
     "http://localhost:3001/mini-ecommerce/estado/:estado/cidades";
+=======
+  const CIDADES_URL = "https://ironrest.herokuapp.com/cidades";
+>>>>>>> dfa4c555b40fc9b88f344b20716971b83d8b3a7e
   const [cidades, setCidades] = useState([]);
 
   useEffect(() => {
     async function obterCidades() {
       try {
-        let { data } = await axios.get(
-          CIDADES_URL.replace(":estado", props.estado)
-        );
+        let { data } = await axios.get(CIDADES_URL.cidades);
         setCidades(data);
       } catch (err) {
         setCidades([]);
       }
     }
-    if (props.estado !== "") {
+    if (props.estado.sigla !== "") {
       obterCidades();
     }
   }, [props.estado]);

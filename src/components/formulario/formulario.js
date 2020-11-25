@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Form, Row, Col, Button, Jumbotron, Modal } from "react-bootstrap";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker, { registerLocale } from "react-datepicker";
 import pt from "date-fns/locale/pt";
 import PropTypes from "prop-types";
-import Estados from "./estados";
-import Cidades from "./cidades";
+// import Estados from "./estados";
+// import Cidades from "./cidades";
 import { Formik } from "formik";
 import * as yup from "yup";
 import { validarCpf, formatarCpf } from "../../utils/cpf-util";
 import formatarCep from "../../utils/cep-util";
 import './formulario.css';
+import Disclaimer from './Disclaimer-modal';
 
 registerLocale("pt", pt);
 
@@ -18,6 +20,8 @@ function Formulario(props) {
   const [dataNascimento, setDataNascimento] = useState(null);
   const [formEnviado, setFormEnviado] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+
 
   const schema = yup.object({
     email: yup.string().email().required(),
@@ -34,6 +38,9 @@ function Formulario(props) {
     cep: yup.string().required().min(9).max(9),
     termosCondicoes: yup.bool().oneOf([true]),
   });
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
 
   function visivel() {
     return props.visivel ? null : "hidden";
@@ -166,7 +173,7 @@ function Formulario(props) {
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} controlID="endereco">
+            <Form.Group as={Row} controlId="endereco">
               <Form.Label column sm={3}>
                 Endereço
               </Form.Label>
@@ -193,7 +200,8 @@ function Formulario(props) {
               </Form.Label>
               <Col sm={9}>
                 <Form.Control
-                  as="select"
+                  type="text"
+                  placeholder="Digite o seu estado"
                   name="estado"
                   data-testid="estado"
                   value={values.estado}
@@ -201,10 +209,10 @@ function Formulario(props) {
                   isValid={touched.estado && !errors.estado}
                   isInvalid={touched.estado && !!errors.estado}
                 >
-                  <Estados />
+                  
                 </Form.Control>
                 <Form.Control.Feedback type="invalid">
-                  Selecione o seu estado.
+                  Digite o seu estado.
                 </Form.Control.Feedback>
               </Col>
             </Form.Group> */}
@@ -215,19 +223,18 @@ function Formulario(props) {
               </Form.Label>
               <Col sm={9}>
                 <Form.Control
-                  as="select"
+                  type="text"
+                  placeholder="Digite a sua cidade"
                   name="cidade"
                   data-testid="cidade"
                   value={values.cidade}
                   onChange={handleChange}
                   isValid={touched.cidade && !errors.cidade}
                   isInvalid={touched.cidade && !!errors.cidade}
-                >
-                  <option value="">Selecione a cidade</option>
-                  <Cidades estado={""} />
+              >
                 </Form.Control>
                 <Form.Control.Feedback type="invalid">
-                  Selecione a sua cidade.
+                  Digite a sua cidade.
                 </Form.Control.Feedback>
               </Col>
             </Form.Group> */}
@@ -268,13 +275,14 @@ function Formulario(props) {
                 isInvalid={touched.termosCondicoes && !!errors.termosCondicoes}
               />
             </Form.Group>
-
+            <Disclaimer />
             <Form.Group as={Row} condtrolId="finalizarAdocao">
               <Col className="text-center" sm={12}>
                 <Button
                   type="submit"
-                  varian="primary"
+                  variant="primary"
                   data-testid="btn-finalizar-adocao"
+                  onClick={handleShow}
                 >
                   Quero Adotar
                 </Button>
@@ -284,9 +292,9 @@ function Formulario(props) {
         )}
       </Formik>
 
-      <Modal show={false} data-testid="modal-adocao">
+      <Modal show={showModal} data-testid="modal-adocao" onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Obrigad@ por seu interesse em adotar!</Modal.Title>
+          <Modal.Title>Agradecemos o seu interesse em adotar!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           Entraremos em contato em até 5 dias úteis para agendar a visita a sua
@@ -301,9 +309,9 @@ function Formulario(props) {
   );
 }
 
-Formulario.propTypes = {
-  visivel: PropTypes.bool.isRequired,
-  handleMenu: PropTypes.func.isRequired,
-};
+// Formulario.propTypes = {
+//   visivel: PropTypes.bool.isRequired,
+//   handleMenu: PropTypes.func.isRequired,
+// };
 
 export default Formulario;
