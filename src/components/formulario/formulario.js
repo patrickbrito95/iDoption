@@ -10,6 +10,7 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { validarCpf, formatarCpf } from "../../utils/cpf-util";
 import formatarCep from "../../utils/cep-util";
+import './formulario.css';
 
 registerLocale("pt", pt);
 
@@ -56,7 +57,7 @@ function Formulario(props) {
   }
 
   return (
-    <Jumbotron fluid style={{ margin: "10px" }} className={visivel()}>
+    <Jumbotron className="form" fluid style={{ margin: "10px" }} className={visivel()}>
       <h3>
         Preencha o Formulário para Manifestar seu Interesse em Adotar um
         Bichinho
@@ -79,7 +80,7 @@ function Formulario(props) {
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate style={{ margin: "10px" }} onSubmit={handleSubmit}>
             <Form.Group as={Row} controlID="email">
-              <Form.Label column sm={3}>
+              <Form.Label className="form-label" column sm={3}>
                 Email
               </Form.Label>
               <Col sm={9}>

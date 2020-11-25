@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const ListAnimals = () => {
     return (
-        <div>
+        <div className="card-div">
             <hr></hr>
             <div className="title-text">
                 <h2>Venha conhecer nossos bichinhos, eles querem um novo lar.</h2>
@@ -23,7 +23,7 @@ const ListAnimals = () => {
                                 <Card.Title style={{ heigth: '40px' }}>{eachAnimals.name}</Card.Title>
                                 <Card.Text className="text-box">
                                 </Card.Text>
-                                <Button variant="primary"><Link to='/formulario'>Me interessei!</Link></Button>
+                                <Button className="btn"><Link className="link" to='/formulario'>Me interessei!</Link></Button>
                             </Card.Body>
                         </Card>
                     </div>

@@ -23,7 +23,7 @@ function MiniEcommerce() {
   const [total, setTotal] = useState("0,00");
 
   return (
-    <div>
+    <div className="all">
       <Menu />
       <Slider></Slider>
       <Route exact path='/' component={ListAnimals} />
