@@ -10,6 +10,7 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { validarCpf, formatarCpf } from "../../utils/cpf-util";
 import formatarCep from "../../utils/cep-util";
+import './formulario.css';
 
 registerLocale("pt", pt);
 
@@ -59,7 +60,7 @@ function Formulario(props) {
   }
 
   return (
-    <Jumbotron fluid style={{ margin: "10px" }} className={visivel()}>
+    <Jumbotron className="form" fluid style={{ margin: "10px" }} className={visivel()}>
       <h3>
         Preencha o Formulário para Manifestar seu Interesse em Adotar um
         Bichinho
@@ -81,8 +82,8 @@ function Formulario(props) {
       >
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate style={{ margin: "10px" }} onSubmit={handleSubmit}>
-            <Form.Group as={Row} controlId="email">
-              <Form.Label column sm={3}>
+            <Form.Group as={Row} controlID="email">
+              <Form.Label className="form-label" column sm={3}>
                 Email
               </Form.Label>
               <Col sm={9}>
@@ -123,7 +124,7 @@ function Formulario(props) {
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} controlId="dataNascimento">
+            {/* <Form.Group as={Row} controlId="dataNascimento">
               <Form.Label column sm={3}>
                 Data de nascimento
               </Form.Label>
@@ -142,7 +143,7 @@ function Formulario(props) {
                   className={datePickerCss()}
                 />
               </Col>
-            </Form.Group>
+            </Form.Group> */}
 
             <Form.Group as={Row} controlId="cpf">
               <Form.Label column sm={3}>
@@ -189,7 +190,7 @@ function Formulario(props) {
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} controlId="estado">
+            {/* <Form.Group as={Row} controlId="estado">
               <Form.Label column sm={3}>
                 Estado
               </Form.Label>
@@ -209,9 +210,9 @@ function Formulario(props) {
                   Selecione o seu estado.
                 </Form.Control.Feedback>
               </Col>
-            </Form.Group>
+            </Form.Group> */}
 
-            <Form.Group as={Row} controlId="cidade">
+            {/* <Form.Group as={Row} controlId="cidade">
               <Form.Label column sm={3}>
                 Cidade
               </Form.Label>
@@ -232,7 +233,7 @@ function Formulario(props) {
                   Selecione a sua cidade.
                 </Form.Control.Feedback>
               </Col>
-            </Form.Group>
+            </Form.Group> */}
 
             <Form.Group as={Row} controlId="cep">
               <Form.Label column sm={3}>

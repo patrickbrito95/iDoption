@@ -1,18 +1,22 @@
 
 import React, { useState, UseState, Fragment, Component } from "react";
-import "./mini-ecommerce.css";
-import Menu from "./components/menu/Menu";
-import Produtos from "./components/produtos/Produtos";
-import Checkout from "./components/checkout/Checkout";
-import ListarProdutos from "./components/produtos/Listar-Produtos";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Clima from "./components/clima/Clima";
-import axios from "axios";
-import Slider from "./components/carousel/Slider";
+
 import Formulario from "./components/formulario/formulario";
+import React, { useState } from 'react';
+import './mini-ecommerce.css';
+import Menu from './components/menu/Menu';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import Slider from './components/carousel/Slider';
+import ListAnimals from './components/produtos/Listar-Animais';
+import Footer from './components/footer/Footer';
+import { Route } from 'react-router-dom';
+
 import ListAnimals from "./components/produtos/Listar-Animais";
 import Footer from "./components/footer/Footer";
 import { Route, Switch } from "react-router-dom";
+
+
 
 
 function MiniEcommerce() {
@@ -26,9 +30,8 @@ function MiniEcommerce() {
       <Menu />
 
       <Slider></Slider>
-      <Produtos />
-      <ListAnimals />
       
+      <Route exact path='/' component={ListAnimals} />
       <Route exact path='/formulario' component={Formulario} />
 
       <Footer />
