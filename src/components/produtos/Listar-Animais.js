@@ -16,8 +16,8 @@ const ListAnimals = () => {
 
             {animals.map((eachAnimals, idx) => {
                 return (
-                    <div key={eachAnimals.name}>
-                        <Card className="card-box" style={{ width: '18rem', margin: '10px', float: 'left' }}>
+                    <div className="card" key={eachAnimals.name}>
+                        <Card className="card-box" style={{ width: '18rem', margin: '10px' }}>
                             <Card.Img className="img-thumbnail" variant="top" src={eachAnimals.image} />
                             <Card.Body className="text-center">
                                 <Card.Title style={{ heigth: '40px' }}>{eachAnimals.name}</Card.Title>

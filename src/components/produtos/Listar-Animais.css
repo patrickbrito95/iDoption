@@ -13,8 +13,12 @@
 }
 
 .card-box {
+    margin: auto;
     background-color: #faead3;
     box-shadow: 4px 9px 16px -4px rgba(0,0,0,0.75);
+    display: flex;
+	justify-content: space-around;
+	align-content: center;
 }
 
 .title-text {
@@ -22,4 +26,17 @@
     padding-top: 50px;
     margin-bottom: 5px;
 }
+
+.card {
+    margin: auto;
+    width: 300px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+	
+	
 

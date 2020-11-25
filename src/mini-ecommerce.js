@@ -26,9 +26,7 @@ function MiniEcommerce() {
     <div>
       <Menu />
       <Slider></Slider>
-      <Produtos />
-      <ListAnimals />
-      
+      <Route exact path='/' component={ListAnimals} />
       <Route exact path='/formulario' component={Formulario} />
 
       <Footer />
