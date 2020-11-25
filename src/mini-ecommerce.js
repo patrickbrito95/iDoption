@@ -1,19 +1,18 @@
 
+import React, { useState, UseState, Fragment, Component } from "react";
+import "./mini-ecommerce.css";
+import Menu from "./components/menu/Menu";
+import Produtos from "./components/produtos/Produtos";
+import Checkout from "./components/checkout/Checkout";
+import ListarProdutos from "./components/produtos/Listar-Produtos";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Clima from "./components/clima/Clima";
+import axios from "axios";
+import Slider from "./components/carousel/Slider";
 import Formulario from "./components/formulario/formulario";
-import React, { useState, UseState, Fragment } from 'react';
-import './mini-ecommerce.css';
-import Menu from './components/menu/Menu';
-import Produtos from './components/produtos/Produtos';
-import Checkout from './components/checkout/Checkout';
-import ListarProdutos from './components/produtos/Listar-Produtos';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Clima from './components/clima/Clima';
-import axios from 'axios';
-import Slider from './components/carousel/Slider';
-import ListAnimals from './components/produtos/Listar-Animais';
-import Footer from './components/footer/Footer';
-import { Route } from 'react-router-dom';
-
+import ListAnimals from "./components/produtos/Listar-Animais";
+import Footer from "./components/footer/Footer";
+import { Route, Switch } from "react-router-dom";
 
 
 function MiniEcommerce() {
@@ -23,8 +22,9 @@ function MiniEcommerce() {
   const [total, setTotal] = useState("0,00");
 
   return (
-    <div>
+    <div className="all">
       <Menu />
+
       <Slider></Slider>
       <Produtos />
       <ListAnimals />
@@ -34,6 +34,7 @@ function MiniEcommerce() {
       <Footer />
     
    </div>
+
   );
 }
 
