@@ -2,6 +2,7 @@ import React from 'react';
 import animals from '../animals.json';
 import { Card, Button } from 'react-bootstrap';
 import './Listar-Animais.css';
+import { Link } from 'react-router-dom';
 
 const ListAnimals = () => {
     return (
@@ -22,7 +23,7 @@ const ListAnimals = () => {
                                 <Card.Title style={{ heigth: '40px' }}>{eachAnimals.name}</Card.Title>
                                 <Card.Text className="text-box">
                                 </Card.Text>
-                                <Button variant="primary">Me interessei!</Button>
+                                <Button variant="primary"><Link to='/formulario'>Me interessei!</Link></Button>
                             </Card.Body>
                         </Card>
                     </div>

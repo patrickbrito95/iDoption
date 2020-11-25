@@ -4,11 +4,12 @@ import './index.css';
 import MiniEcommerce from './mini-ecommerce';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <MiniEcommerce />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
