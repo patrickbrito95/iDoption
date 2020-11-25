@@ -1,8 +1,10 @@
+
 import React from "react";
 import animals from "../animals.json";
 import { Card, Button } from "react-bootstrap";
 import "./Listar-Animais.css";
 import { Link } from "react-router-dom";
+
 
 const ListAnimals = () => {
   return (
@@ -42,5 +44,6 @@ const ListAnimals = () => {
     </div>
   );
 };
+
 
 export default ListAnimals;

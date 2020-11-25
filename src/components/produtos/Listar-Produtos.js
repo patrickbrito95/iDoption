@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card , Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function ListarProdutos(){
     
@@ -38,7 +39,7 @@ function ListarProdutos(){
                         <Button variant="success"
                             style={{ width: '100%'}}
                             onClick={(event) => handleAdotar(event, produto)}>
-                            Adotar
+                            <Link to='/formulario'>Me interessei!</Link>
                          </Button>
                     </Card.Body>
                     </Card>

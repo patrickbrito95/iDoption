@@ -1,0 +1,20 @@
+.footer {
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+    background-color: #AAAAAA;
+}
+
+
+.social {
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    padding: 10px;
+}

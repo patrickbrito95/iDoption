@@ -1,3 +1,4 @@
+
 import React, { useState, UseState, Fragment, Component } from "react";
 import "./mini-ecommerce.css";
 import Menu from "./components/menu/Menu";
@@ -13,6 +14,7 @@ import ListAnimals from "./components/produtos/Listar-Animais";
 import Footer from "./components/footer/Footer";
 import { Route, Switch } from "react-router-dom";
 
+
 function MiniEcommerce() {
   const [carrinho, setCarrinho] = useState({ produtos: [] });
   const [exibirProdutos, setExibirProdutos] = useState(true);
@@ -22,18 +24,17 @@ function MiniEcommerce() {
   return (
     <div className="all">
       <Menu />
-      {/* <Clima /> */}
-      <Slider />
+
+      <Slider></Slider>
+      <Produtos />
       <ListAnimals />
-      <footer>
-        <Footer />
-      </footer>
-      <div>
-        <Switch>
-          <Route exact path="/formulario" component={Formulario} />
-        </Switch>
-      </div>
-    </div>
+      
+      <Route exact path='/formulario' component={Formulario} />
+
+      <Footer />
+    
+   </div>
+
   );
 }
 
