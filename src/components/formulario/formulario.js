@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Form, Row, Col, Button, Jumbotron, Modal } from "react-bootstrap";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker, { registerLocale } from "react-datepicker";
 import pt from "date-fns/locale/pt";
 import PropTypes from "prop-types";
-import Estados from "./estados";
-import Cidades from "./cidades";
+// import Estados from "./estados";
+// import Cidades from "./cidades";
 import { Formik } from "formik";
 import * as yup from "yup";
 import { validarCpf, formatarCpf } from "../../utils/cpf-util";
 import formatarCep from "../../utils/cep-util";
+import axios from "axios";
 
 registerLocale("pt", pt);
 
@@ -195,7 +197,8 @@ function Formulario(props) {
               </Form.Label>
               <Col sm={9}>
                 <Form.Control
-                  as="select"
+                  type="text"
+                  placeholder="Digite o seu estado"
                   name="estado"
                   data-testid="estado"
                   value={values.estado}
@@ -203,10 +206,10 @@ function Formulario(props) {
                   isValid={touched.estado && !errors.estado}
                   isInvalid={touched.estado && !!errors.estado}
                 >
-                  <Estados />
+                  
                 </Form.Control>
                 <Form.Control.Feedback type="invalid">
-                  Selecione o seu estado.
+                  Digite o seu estado.
                 </Form.Control.Feedback>
               </Col>
             </Form.Group>
@@ -217,19 +220,18 @@ function Formulario(props) {
               </Form.Label>
               <Col sm={9}>
                 <Form.Control
-                  as="select"
+                  type="text"
+                  placeholder="Digite a sua cidade"
                   name="cidade"
                   data-testid="cidade"
                   value={values.cidade}
                   onChange={handleChange}
                   isValid={touched.cidade && !errors.cidade}
                   isInvalid={touched.cidade && !!errors.cidade}
-                >
-                  <option value="">Selecione a cidade</option>
-                  <Cidades estado={""} />
+              >
                 </Form.Control>
                 <Form.Control.Feedback type="invalid">
-                  Selecione a sua cidade.
+                  Digite a sua cidade.
                 </Form.Control.Feedback>
               </Col>
             </Form.Group>
