@@ -1,10 +1,28 @@
-import React from 'react';
-import animals from '../animals.json';
+import React, { useState, useEffect} from 'react';
 import { Card, Button } from 'react-bootstrap';
 import './Listar-Animais.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const ListAnimals = () => {
+    
+    const [animals, setAnimals] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+          try {
+            const response = await axios.get(
+              "https://ironrest.herokuapp.com/animals"
+            );
+            setAnimals([...response.data]);
+          } catch (err) {
+            console.error(err);
+          }
+        }
+        fetchData();
+      }, []);
+    
+    
     return (
         <div className="card-div">
             <hr></hr>
@@ -14,6 +32,8 @@ const ListAnimals = () => {
             <br></br>
             <hr></hr>
 
+            
+            <div className="div-map">
             {animals.map((eachAnimals, idx) => {
                 return (
                     <div className="card" key={eachAnimals.name}>
@@ -29,6 +49,8 @@ const ListAnimals = () => {
                     </div>
                 )
             })}
+            </div>
+           
         </div>
     )
 }
