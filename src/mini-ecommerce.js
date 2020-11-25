@@ -1,4 +1,6 @@
 
+import React, { useState, UseState, Fragment, Component } from "react";
+
 import Formulario from "./components/formulario/formulario";
 import React, { useState } from 'react';
 import './mini-ecommerce.css';
@@ -9,6 +11,10 @@ import Slider from './components/carousel/Slider';
 import ListAnimals from './components/produtos/Listar-Animais';
 import Footer from './components/footer/Footer';
 import { Route } from 'react-router-dom';
+
+import ListAnimals from "./components/produtos/Listar-Animais";
+import Footer from "./components/footer/Footer";
+import { Route, Switch } from "react-router-dom";
 
 
 
@@ -22,6 +28,7 @@ function MiniEcommerce() {
   return (
     <div className="all">
       <Menu />
+
       <Slider></Slider>
       
       <Route exact path='/' component={ListAnimals} />
@@ -30,6 +37,7 @@ function MiniEcommerce() {
       <Footer />
     
    </div>
+
   );
 }
 

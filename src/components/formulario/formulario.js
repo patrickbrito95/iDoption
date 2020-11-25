@@ -35,6 +35,9 @@ function Formulario(props) {
     termosCondicoes: yup.bool().oneOf([true]),
   });
 
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+
   function visivel() {
     return props.visivel ? null : "hidden";
   }
@@ -166,7 +169,7 @@ function Formulario(props) {
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} controlID="endereco">
+            <Form.Group as={Row} controlId="endereco">
               <Form.Label column sm={3}>
                 Endereço
               </Form.Label>
@@ -273,8 +276,9 @@ function Formulario(props) {
               <Col className="text-center" sm={12}>
                 <Button
                   type="submit"
-                  varian="primary"
+                  variant="primary"
                   data-testid="btn-finalizar-adocao"
+                  onClick={handleShow}
                 >
                   Quero Adotar
                 </Button>
@@ -284,9 +288,9 @@ function Formulario(props) {
         )}
       </Formik>
 
-      <Modal show={false} data-testid="modal-adocao">
+      <Modal show={showModal} data-testid="modal-adocao" onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Obrigad@ por seu interesse em adotar!</Modal.Title>
+          <Modal.Title>Agradecemos o seu interesse em adotar!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           Entraremos em contato em até 5 dias úteis para agendar a visita a sua
@@ -301,9 +305,9 @@ function Formulario(props) {
   );
 }
 
-Formulario.propTypes = {
-  visivel: PropTypes.bool.isRequired,
-  handleMenu: PropTypes.func.isRequired,
-};
+// Formulario.propTypes = {
+//   visivel: PropTypes.bool.isRequired,
+//   handleMenu: PropTypes.func.isRequired,
+// };
 
 export default Formulario;
