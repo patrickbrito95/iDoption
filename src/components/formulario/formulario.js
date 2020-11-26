@@ -11,7 +11,8 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { validarCpf, formatarCpf } from "../../utils/cpf-util";
 import formatarCep from "../../utils/cep-util";
-import axios from "axios";
+import './formulario.css';
+import Disclaimer from './Disclaimer-modal';
 
 registerLocale("pt", pt);
 
@@ -19,6 +20,8 @@ function Formulario(props) {
   const [dataNascimento, setDataNascimento] = useState(null);
   const [formEnviado, setFormEnviado] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+
 
   const schema = yup.object({
     email: yup.string().email().required(),
@@ -47,6 +50,7 @@ function Formulario(props) {
 
   function handleDataNascimento(data) {
     setDataNascimento(data);
+    console.log(data);
   }
 
   function datePickerCss() {
@@ -61,7 +65,7 @@ function Formulario(props) {
   }
 
   return (
-    <Jumbotron fluid style={{ margin: "10px" }} className={visivel()}>
+    <Jumbotron className="form" fluid style={{ margin: "10px" }} className={visivel()}>
       <h3>
         Preencha o Formulário para Manifestar seu Interesse em Adotar um
         Bichinho
@@ -83,8 +87,8 @@ function Formulario(props) {
       >
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate style={{ margin: "10px" }} onSubmit={handleSubmit}>
-            <Form.Group as={Row} controlId="email">
-              <Form.Label column sm={3}>
+            <Form.Group as={Row} controlID="email">
+              <Form.Label className="form-label" column sm={3}>
                 Email
               </Form.Label>
               <Col sm={9}>
@@ -125,7 +129,7 @@ function Formulario(props) {
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} controlId="dataNascimento">
+             <Form.Group as={Row} controlId="dataNascimento">
               <Form.Label column sm={3}>
                 Data de nascimento
               </Form.Label>
@@ -140,11 +144,11 @@ function Formulario(props) {
                   placeholderText="Selecione a data"
                   withPortal
                   selected={dataNascimento}
-                  onchange={handleDataNascimento}
+                  onChange={handleDataNascimento}
                   className={datePickerCss()}
                 />
               </Col>
-            </Form.Group>
+            </Form.Group> 
 
             <Form.Group as={Row} controlId="cpf">
               <Form.Label column sm={3}>
@@ -177,7 +181,7 @@ function Formulario(props) {
               <Col sm={9}>
                 <Form.Control
                   type="text"
-                  placeholder="Digite o seu endereço completo"
+                  placeholder="Digite o seu endereço completo na cidade de São Paulo."
                   name="endereco"
                   data-testid="txt-endereco"
                   value={values.endereco}
@@ -186,12 +190,12 @@ function Formulario(props) {
                   isInvalid={touched.endereco && !!errors.endereco}
                 />
                 <Form.Control.Feedback type="invalid">
-                  Digite o seu endereço.
+                  Digite o seu endereço. 
                 </Form.Control.Feedback>
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} controlId="estado">
+            {/* <Form.Group as={Row} controlId="estado">
               <Form.Label column sm={3}>
                 Estado
               </Form.Label>
@@ -212,9 +216,9 @@ function Formulario(props) {
                   Digite o seu estado.
                 </Form.Control.Feedback>
               </Col>
-            </Form.Group>
+            </Form.Group>  */}
 
-            <Form.Group as={Row} controlId="cidade">
+             {/* <Form.Group as={Row} controlId="cidade">
               <Form.Label column sm={3}>
                 Cidade
               </Form.Label>
@@ -234,7 +238,7 @@ function Formulario(props) {
                   Digite a sua cidade.
                 </Form.Control.Feedback>
               </Col>
-            </Form.Group>
+            </Form.Group>  */}
 
             <Form.Group as={Row} controlId="cep">
               <Form.Label column sm={3}>
@@ -272,7 +276,7 @@ function Formulario(props) {
                 isInvalid={touched.termosCondicoes && !!errors.termosCondicoes}
               />
             </Form.Group>
-
+            <Disclaimer />
             <Form.Group as={Row} condtrolId="finalizarAdocao">
               <Col className="text-center" sm={12}>
                 <Button
@@ -305,10 +309,5 @@ function Formulario(props) {
     </Jumbotron>
   );
 }
-
-// Formulario.propTypes = {
-//   visivel: PropTypes.bool.isRequired,
-//   handleMenu: PropTypes.func.isRequired,
-// };
 
 export default Formulario;

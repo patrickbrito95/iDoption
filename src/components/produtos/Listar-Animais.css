@@ -1,11 +1,11 @@
 
 .img-thumbnail {
-    width: 350px;
+    width: 400px;
     height: 350px;
 }
 
 .img-thumbnail:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.05); 
 }
 
 .text-box {
@@ -13,8 +13,12 @@
 }
 
 .card-box {
-    background-color: #faead3;
+    margin: auto;
+    background-color: #bcdffc;
     box-shadow: 4px 9px 16px -4px rgba(0,0,0,0.75);
+    border: none;
+    padding: 10px;
+    margin: 50px;
 }
 
 .title-text {
@@ -22,4 +26,41 @@
     padding-top: 50px;
     margin-bottom: 5px;
 }
+
+.card {
+    display: inline-block;
+    background-color: #bcdffc ;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+	
+}
+
+.card-div {
+    padding: 10px;
+    align-content: center;
+
+}
+
+.btn-adopt {
+    transition-duration: 0.4s;
+    background-color: #17a5f7;
+    border-radius: none;
+  }
+  
+  .btn:hover {
+    background-color: #66aae2; /* Green */
+    color: white;
+  }
+
+  .link {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+  }
+
+
+	
+	
 

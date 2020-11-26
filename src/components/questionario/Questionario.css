@@ -1,0 +1,23 @@
+
+.questions {
+    width: 800px;
+}
+
+.submit-btn {
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quest {
+    padding-left: 300px;
+}
+
+span {
+    color: white;
+}
+
+.title-quest {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

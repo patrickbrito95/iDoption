@@ -3,3 +3,8 @@
 .carousel {
     margin: auto;
 }
+
+
+.slider-title {
+    text-shadow: 2px 2px black;
+}
