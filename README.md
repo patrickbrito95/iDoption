@@ -24,7 +24,7 @@ Incluímos dois modais no formulário: (i) o primeiro trata dos termos e condiç
 
 Aquilo que contaria com o back-end (ou seja, o envio do formulário e todas as ações que seriam disparadas com o clique do botão "Quero Adotar!") não faz parte do escopo desse projeto. Quem sabe no próximo (que trata especificamente de back-end) nós consigamos ampliar as funcionalidades da plataforma?
 
-Agradecemos o interesse pelo nosso projeto e por lerem esse texto até o final! Fique à vontade para clicar no link inserido na seção "Deploy" abaixo para verificar a funcionalidade do iDoption.
+Agradecemos o interesse pelo nosso projeto e por ler esse texto até o final! Fique à vontade para clicar no link inserido na seção "Deploy" abaixo para verificar a funcionalidade do iDoption.
 
 ### `Autores`
 
