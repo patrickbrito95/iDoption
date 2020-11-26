@@ -50,6 +50,7 @@ function Formulario(props) {
 
   function handleDataNascimento(data) {
     setDataNascimento(data);
+    console.log(data);
   }
 
   function datePickerCss() {
@@ -128,7 +129,7 @@ function Formulario(props) {
               </Col>
             </Form.Group>
 
-            {/* <Form.Group as={Row} controlId="dataNascimento">
+             <Form.Group as={Row} controlId="dataNascimento">
               <Form.Label column sm={3}>
                 Data de nascimento
               </Form.Label>
@@ -143,11 +144,11 @@ function Formulario(props) {
                   placeholderText="Selecione a data"
                   withPortal
                   selected={dataNascimento}
-                  onchange={handleDataNascimento}
+                  onChange={handleDataNascimento}
                   className={datePickerCss()}
                 />
               </Col>
-            </Form.Group> */}
+            </Form.Group> 
 
             <Form.Group as={Row} controlId="cpf">
               <Form.Label column sm={3}>
@@ -180,7 +181,7 @@ function Formulario(props) {
               <Col sm={9}>
                 <Form.Control
                   type="text"
-                  placeholder="Digite o seu endereço completo"
+                  placeholder="Digite o seu endereço completo na cidade de São Paulo."
                   name="endereco"
                   data-testid="txt-endereco"
                   value={values.endereco}
@@ -189,7 +190,7 @@ function Formulario(props) {
                   isInvalid={touched.endereco && !!errors.endereco}
                 />
                 <Form.Control.Feedback type="invalid">
-                  Digite o seu endereço.
+                  Digite o seu endereço. 
                 </Form.Control.Feedback>
               </Col>
             </Form.Group>
@@ -215,9 +216,9 @@ function Formulario(props) {
                   Digite o seu estado.
                 </Form.Control.Feedback>
               </Col>
-            </Form.Group> */}
+            </Form.Group>  */}
 
-            {/* <Form.Group as={Row} controlId="cidade">
+             {/* <Form.Group as={Row} controlId="cidade">
               <Form.Label column sm={3}>
                 Cidade
               </Form.Label>
@@ -237,7 +238,7 @@ function Formulario(props) {
                   Digite a sua cidade.
                 </Form.Control.Feedback>
               </Col>
-            </Form.Group> */}
+            </Form.Group>  */}
 
             <Form.Group as={Row} controlId="cep">
               <Form.Label column sm={3}>
@@ -308,10 +309,5 @@ function Formulario(props) {
     </Jumbotron>
   );
 }
-
-// Formulario.propTypes = {
-//   visivel: PropTypes.bool.isRequired,
-//   handleMenu: PropTypes.func.isRequired,
-// };
 
 export default Formulario;

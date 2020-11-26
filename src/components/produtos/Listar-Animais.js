@@ -22,7 +22,8 @@ const ListAnimals = () => {
         fetchData();
       }, []);
     
-    
+      console.log(animals)
+
     return (
         <div className="card-div">
             <hr></hr>
@@ -36,7 +37,7 @@ const ListAnimals = () => {
             <div className="div-map">
             {animals.map((eachAnimals, idx) => {
                 return (
-                    <div className="card" key={eachAnimals.name}>
+                    <div className="card" key={eachAnimals._id}>
                         <Card className="card-box" style={{ width: '18rem', margin: '10px' }}>
                             <Card.Img className="img-thumbnail" variant="top" src={eachAnimals.image} />
                             <Card.Body className="text-center">
