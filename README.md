@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+![Image](./src/images/logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é o projeto de número 2 do Bootcamp de Web Development Full Time da Ironhack.
 
-## Available Scripts
+Para esse projeto foram passados os seguintes requisitos:
 
-In the project directory, you can run:
+1. Usar o React como base e entregar um app funcional;
+2. Usar o Axios ou Fetch API para enviar solicitações HTTP a uma API externa, e atualizar o navegador com os dados recebidos;
+3. Usar uma ou mais APIs externas, simular ou criar um backend fake com o json-server ou o [Ironrest API](https://github.com/Tzikas/MONGO_REST);
+4. Implementar Rotas (Routes) para todos os componentes que devam renderizar um SPA no navegador. Pelo menos uma rota deve usar parâmetros de rota;
+5. Criar um repositório no GitHub (se vc está lendo esse ReadMe, vc chegou até ele );
+6. Realizar pelo menos 1 commit por dia durante a semana do projeto;
+7. Realizar o deploy usando o Heroku para que qualquer pessoa possa usar o app.
 
-### `npm start`
+- Bonus: não é necessário que o design seja responsivo, mas seria legal se fosse, né?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `iDoption`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+(descrição do projeto e motivos)
 
-### `npm test`
+### `Autores`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Juliana Mattar](https://github.com/JulianaMattar)
+- [Patrick Brito](https://github.com/patrickbrito95)
 
-### `npm run build`
+### `Slides de Apresentação`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Slides](inserir link)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Heroku](inserir link)
 
-### `npm run eject`
+### `Agradecimentos`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Gostaríamos de agradecer:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Julia Foresti](https://github.com/juliajforesti) - TA extraordinaire!
+- [Pedro Resch](https://github.com/rschpdr) - LT maravigold!
+- Cohort 35 WDFT da Ironhack - a melhor turma de WD com quem poderíamos sonhar passar pelo Bootcamp da Ironhack! Abaixo a lista dos ilustres:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - [Tassia](https://github.com/tassiaaccioly)
+  - [Rodrigo](https://github.com/rodrigomatosrj)
+  - [Guilherme](https://github.com/gtretow)
+  - [Fellype](https://github.com/FellypeQ)
+  - [Laura](https://github.com/lauraferraz5)
+  - [Vitor](https://github.com/vmvieira)
+  - [Denis](https://github.com/DenisM20)
+  - [Aline](https://github.com/IdrissTheCat)
+  - [Denison](https://github.com/denisonamaral)
+  - [Hector](https://github.com/HectorIH)
+  - [Thalia](https://github.com/thaliaberger)
+  - [Leonardo](https://github.com/luezu-42)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<3
