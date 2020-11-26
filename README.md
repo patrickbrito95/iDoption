@@ -14,6 +14,10 @@ Para esse projeto foram passados os seguintes requisitos:
 
 - Bonus: não é necessário que o design seja responsivo, mas seria legal se fosse, né?
 
+### `iDoption`
+
+(descrição do projeto e motivos)
+
 ### `Autores`
 
 - [Juliana Mattar](https://github.com/JulianaMattar)
