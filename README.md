@@ -5,9 +5,9 @@ Esse é o projeto de número 2 do Bootcamp de Web Development Full Time da Ironh
 Para esse projeto foram passados os seguintes requisitos:
 
 1. Usar o React como base e entregar um app funcional;
-2. Usar o Axios ou Fetch API para enviar solicitações HTTP a uma API externa, e atualizar o navegador com os dados recebidos;
+2. Usar o Axios ou Fetch API para enviar solicitações HTTP a uma API externa e atualizar o navegador com os dados recebidos;
 3. Usar uma ou mais APIs externas, simular ou criar um backend fake com o json-server ou o [Ironrest API](https://github.com/Tzikas/MONGO_REST);
-4. Implementar Rotas (Routes) para todos os componentes que devam renderizar um SPA no navegador. Pelo menos uma rota deve usar parâmetros de rota;
+4. Implementar rotas (Routes) para todos os componentes que devam renderizar um SPA no navegador. Pelo menos uma rota deve usar parâmetros de rota;
 5. Criar um repositório no GitHub (se vc está lendo esse ReadMe, vc chegou até ele );
 6. Realizar pelo menos 1 commit por dia durante a semana do projeto;
 7. Realizar o deploy usando o Heroku para que qualquer pessoa possa usar o app.
@@ -16,7 +16,15 @@ Para esse projeto foram passados os seguintes requisitos:
 
 ### `iDoption`
 
-(descrição do projeto e motivos)
+O iDoption é uma plataforma para adoção de animais domésticos resgatados por ONGs e disponibilizados para adoção. A página inicial exibe a lista de bichinhos inputados em uma API (nesse caso usamos uma fake API feita por meio do Ironrest API) e, caso haja interese em adotar algum bichinho, há um botão que leva o usuário a um formulário para preenchimento de dados.
+
+O papel do formulário é o de inputar dados e disponibilizá-los aos administradores da plataforma. Esses dados serão usados para eventual agendamento de uma entrevista entre o usuário e a ONG que resgata e cuida dos bichinhos que serão adotados para averiguação da aptidão para adotar. Há também um questionário para inclusão de maiores detalhes pessoais sobre o usuário que pretende adotar um bichinho.
+
+Incluímos dois modais no formulário: (i) o primeiro trata dos termos e condições com os quais o usuário concorda e cujo link apresenta um modal com os dizeres legais sobre o abandono e maus tratos de bichinhos e penalidades previstas em lei e (ii) o segundo é acionado quando o usuário aperta o botão para envio do formulário e apresenta um texto com instruções para os próximos passos e avisando que um email com maiores detalhes foi enviado ao usuário no endereço incluso no formulário.
+
+Aquilo que contaria com o back-end (ou seja, o envio do formulário e todas as ações que seriam disparadas com o clique do botão "Quero Adotar!") não faz parte do escopo desse projeto. Quem sabe no próximo (que trata especificamente de back-end) nós consigamos ampliar as funcionalidades da plataforma?
+
+Agradecemos o interesse pelo nosso projeto e por lerem esse texto até o final! Fique à vontade para clicar no link inserido na seção "Deploy" abaixo para verificar a funcionalidade do iDoption.
 
 ### `Autores`
 
