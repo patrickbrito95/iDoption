@@ -15,8 +15,7 @@ function Slider(){
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>Adote um melhor amigo!</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3 className="slider-title">Adote um melhor amigo!</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -27,8 +26,7 @@ function Slider(){
     />
 
     <Carousel.Caption>
-      <h3>O amor verdadeiro tem quatro patas, um focinho e um rabinho abanando de felicidade.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3 className="slider-title">O amor verdadeiro tem quatro patas, um focinho e um rabinho abanando de felicidade.</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -39,8 +37,7 @@ function Slider(){
     />
 
     <Carousel.Caption>
-      <h3>Uma lambida vale mais que mil palavras</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3 className="slider-title">Uma lambida vale mais que mil palavras</h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

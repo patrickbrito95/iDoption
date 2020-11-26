@@ -1,14 +1,14 @@
 import "./mini-ecommerce.css";
 import Menu from "./components/menu/Menu";
 import Formulario from "./components/formulario/formulario";
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import Slider from './components/carousel/Slider';
 import ListAnimals from './components/produtos/Listar-Animais';
 import Footer from './components/footer/Footer';
 import { Route } from 'react-router-dom';
-import Disclaimer from "./components/formulario/Disclaimer-modal";
+import Questionario from './components/questionario/Questionario';
+
 
 
 
@@ -22,9 +22,8 @@ function MiniEcommerce() {
       <Slider></Slider>
       
       <Route exact path='/' component={ListAnimals} />
+      <Route exact path='/questionario' component={Questionario} />
       <Route exact path='/formulario' component={Formulario} />
-
-      
 
       <Footer />
 

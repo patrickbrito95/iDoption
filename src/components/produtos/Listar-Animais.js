@@ -7,7 +7,7 @@ import axios from 'axios';
 const ListAnimals = () => {
     
     const [animals, setAnimals] = useState([]);
-
+    
     useEffect(() => {
         async function fetchData() {
           try {
@@ -43,7 +43,7 @@ const ListAnimals = () => {
                                 <Card.Title style={{ heigth: '40px' }}>{eachAnimals.name}</Card.Title>
                                 <Card.Text className="text-box">
                                 </Card.Text>
-                                <Button className="btn"><Link className="link" to='/formulario'>Me interessei!</Link></Button>
+                                <Button className="btn-adopt"><Link className="link" to='/questionario'>Me interessei!</Link></Button>
                             </Card.Body>
                         </Card>
                     </div>
